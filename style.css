@@ -1,0 +1,101 @@
+/* Estilo para el título principal */
+h1 {
+  padding: 15px;
+  text-align: center;
+  background-color: #2dacff;
+  font-family: "DM Serif Text", serif;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 50px;
+  color: black;
+  margin: 40px auto;
+  width: 50%;
+}
+
+/* Contenedor principal */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Formulario para agregar tareas */
+form {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  padding: 15px;
+  outline: none;
+  width: 300px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn-add {
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  background-color: #2dacff;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-add:hover {
+  background-color: #1c8cdc;
+}
+
+/* Lista de tareas */
+ul {
+  padding: 0;
+  width: 80%;
+  margin: 20px auto 0;
+}
+
+li {
+  list-style: none;
+  background-color: lightgray;
+  border-radius: 10px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  gap: 10px;
+}
+
+li .texto-tarea {
+  font-size: 16px;
+  color: black;
+  flex-grow: 1;
+}
+
+/* Botón de eliminar */
+.btn-eliminar {
+  padding: 10px;
+  border: none;
+  color: white;
+  background-color: #e31746;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn-eliminar:hover {
+  background-color: #d33e61;
+}
+
+/* Mensaje de lista vacía */
+.empty {
+  text-align: center;
+  color: gray;
+  margin-top: 20px;
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+}
